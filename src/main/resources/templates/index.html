@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang= "pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        body {text-align: center;}
+        a {text-decoration: none; }
+        input.error {background-color: brown}
+    </style>
+</head>
+<body>
+<h1>Ciąg fibonacciego:</h1>
+<form th:action="@{/oblicz}" method="POST">
+    <input type="number" th:name="liczba"/></br>
+    <button type="submit">Oblicz</button></br>
+    Wynik: <span th:text="${wynik}"></span>
+</form>
+
+</body>
+</html>
